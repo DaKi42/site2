@@ -1,0 +1,77 @@
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+}
+
+.breadcrumb li a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb li a:hover {
+    color: var(--main-text-color-hover);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    margin: 0 10px;
+    color: var(--main-text-color);
+}
+
+.breadcrumb li:last-child {
+    font-weight: bold;
+}
+
+
+.show-more-btn {
+    background-color: var(--main-text-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 280px !important;
+    width: 100%;
+
+}
+
+.show-more-btn:hover {
+    background-color: var(--main-text-color-hover);
+}
+
+.indicator-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+
+    &:hover{
+        background-color: var(--main-text-color-hover);
+    }
+}
+
+.dot.active {
+    background-color: var(--main-text-color);
+}

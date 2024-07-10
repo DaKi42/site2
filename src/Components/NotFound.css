@@ -1,0 +1,44 @@
+.not-found-container {
+
+    .mar{
+        margin: 150px auto !important;
+    }
+
+    .row {
+
+        justify-content: space-between;
+    }
+
+    h1, p {
+        color: var(--main-text-color) !important;
+    }
+
+    h1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 100px;
+    }
+
+    p {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    a {
+        color: var(--main-bg-accent-color) !important;
+        text-decoration: none;
+        &:hover {
+            color: var(--main-text-color-hover) !important;
+        }
+    ;
+    }
+
+    .not-found-img {
+        align-self: end;
+        img {
+            min-width: 50%;
+            max-width: 100%;
+        }
+    }
+}
+

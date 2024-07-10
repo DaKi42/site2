@@ -1,0 +1,139 @@
+header {
+    .bg-full-width {
+        width: 100vw;
+        background-color: var(--main-bg-accent-color);
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .home {
+        cursor: pointer;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-family: 'Irish Grover', serif;
+        color: var(--main-bg-color);
+    }
+
+    .nav-link {
+        color: var(--main-bg-color) !important;
+    }
+
+    .city-select-container, .city-select-btn, .city-dropdown a, .phone-number, .location, .new-btn {
+        color: var(--main-text-color) !important;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--main-text-color-hover);
+        }
+    }
+
+    .catalog-btn, .new-btn {
+        background-color: var(--main-bg-accent-color);
+    }
+
+    .search-input, .search-input::placeholder {
+        color: var(--main-bg-accent-color);
+    }
+
+    .city-select-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .city-dropdown {
+        display: none;
+        position: absolute;
+        border-radius: 4px;
+        background-color: var(--main-bg-color);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 50%;
+        width: 200px;
+        transform: translateX(50%);
+
+        a {
+            padding: 9px;
+            text-decoration: none;
+            display: block;
+        }
+    }
+
+    .city-select-container:hover .city-dropdown {
+        display: block;
+    }
+
+    /*--------------------------------*/
+
+    .location:hover .hover-fill {
+        stroke: none;
+        fill: var(--main-bg-accent-color)
+    }
+
+    /*--------------------------------*/
+
+    .phone-number {
+        font-weight: 500;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    /*--------------------------------*/
+
+    .catalog-btn {
+        color: var(--main-bg-color);
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        white-space: nowrap;
+        border-radius: 8px;
+    }
+
+    .new-btn {
+        color: var(--main-bg-color);
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 1225px;
+        height: 44px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 8px;
+
+    }
+
+    .nav-link i {
+        font-size: 18px;
+    }
+
+    .nav-link span {
+        margin-left: 8px;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,146 @@
+.accoun-cont {
+margin: 20px auto 60px;
+}
+
+.container {
+    .row {
+        margin: 0 auto;
+    }
+}
+
+.sidebar {
+    padding: 20px;
+    border-right: 1px solid #898989;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        border-right: none;
+    }
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+
+}
+
+.sidebar-menu li a {
+    color: #898989;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+
+    img {
+        width: 18px;
+        padding-bottom: 5px;
+    }
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    color: var(--main-text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sidebar-menu li a .icon {
+    stroke: currentColor;
+    width: 18px;
+    padding-bottom: 2px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #898989;
+    font-weight: 400;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--main-text-color-hover);
+    border-radius: 5px;
+    background-color: #CA9F141A;
+    color: var(--main-text-color-hover);
+
+    &:disabled {
+        background-color: #CA9F141A;
+        border-color: #CA9F14;
+        color: var(--main-text-color);
+    }
+
+}
+
+.form-control.is-invalid {
+    border-color: red;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.edit-btn {
+    background-color: transparent;
+    color: var(--main-bg-accent-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn .icon {
+    stroke: currentColor;
+    width: 18px;
+    padding-bottom: 2px;
+    margin-right: 14px;
+}
+
+.edit-btn:hover {
+    color: #DAA520;
+}
+
+
+.edit-btn:focus {
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+.save-btn {
+    background-color: #DAA520;
+    color: #fff;
+
+    &:hover {
+        color: var(--main-bg-accent-color);
+    }
+}

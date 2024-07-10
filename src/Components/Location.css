@@ -1,0 +1,99 @@
+.row {
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+.city-select-container {
+    position: relative;
+    width: 100%;
+}
+
+.city-select-btn {
+    background-color: #CA9F141A;
+    color: var(--main-text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--main-text-color);
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: 235px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.city-dropdown-1 {
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 96%;
+}
+
+.city-dropdown-1 a {
+    padding: 9px;
+    text-decoration: none;
+    display: block;
+    color:  var(--main-text-color);
+}
+
+.city-dropdown-1 a:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color) !important;
+}
+
+.location-info {
+    color: var(--main-bg-color);
+    border: 1px solid var(--main-text-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 280px;
+    max-height: 190px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-info h2 {
+    color: var(--main-bg-accent-color);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.location-info .address {
+    color: var(--main-text-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.location-info .hours {
+    color: #898989;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+@media (max-width: 769px) {
+    .location-info {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .city-select-btn {
+        max-width: 93%;
+    }
+}
